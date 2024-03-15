@@ -158,8 +158,7 @@ header > .main-slide {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-6/428608975_813470564140346_3119655288788747631_n.jpg?stp=dst-jpg_s960x960&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=P59igAEr9R4AX9OLSaD&_nc_ht=scontent.fcai20-2.fna&oh=00_AfCDZjdHSu2q3hWVV9EC9qep85NDdyQnHQvK1v9A3vkbHA&oe=65ED4285")
-    no-repeat;
+  background: url("../assets/backgrounds/cover_spirit.jpg") no-repeat;
   background-size: cover;
 }
 .main-slide .row {
@@ -222,13 +221,13 @@ header > .main-slide {
 }
 /* hover */
 .services .row > .col:hover {
-  background-color: var(--sec-color);
+  background-color: #007bffd9;
 }
 .services .row > .col:hover .icon > i {
-  color: var(--fst-color);
+  color: var(--fore-color);
 }
-.services .row > .col:hover .text-content > h3 {
-  color: var(--fst-color);
+.services .row > .col:hover .text-content {
+  color: var(--fore-color);
 }
 
 /* End Services Section */
@@ -286,6 +285,7 @@ header > .main-slide {
   padding: 10px;
   border: 1px solid var(--thr-color);
   box-shadow: 0px 0px 10px 1px var(--thr-color);
+  /* overflow: hidden; */
 }
 .about .text-content {
   padding: 20px;
@@ -293,7 +293,16 @@ header > .main-slide {
 .about .text-content p {
   margin: 10px 0;
 }
-
+.about .row .col .box .image {
+  overflow: hidden;
+}
+.about .row .col .box img {
+  transition: all 0.3s ease-in-out;
+}
+.about .row .col .box img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
 .about .text-content button {
   padding: 10px 15px;
   background-color: var(--fore-color);
